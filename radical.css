@@ -1,0 +1,34 @@
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cutie{
+    margin-top: 50px;
+    min-height: 300px;
+    max-width: 500px;
+    background-color: #001f3f;
+    border-radius: 20px;
+}
+.title{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #7FDBFF;
+    text-align: center;
+    font-family: Gotham Rounded, sans-serif;
+}
+.date{
+    margin: 20px;
+}
+.date label{
+    color: white;
+}
+.result{
+    color: white;
+    margin-top: 10px;
+}
+.rezultat{
+    padding-left: 20px;
+    color: white;
+}
