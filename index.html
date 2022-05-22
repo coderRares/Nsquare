@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<script src="functii.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<html>
+    <head>
+        <style>
+            .parent{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .cutie{
+                margin-top: 50px;
+                min-height: 300px;
+                max-width: 500px;
+                background-color: #001f3f;
+                border-radius: 20px;
+            }
+            .title{
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: #7FDBFF;
+                text-align: center;
+                font-family: Gotham Rounded, sans-serif;
+            }
+            .date{
+                margin: 20px;
+            }
+            .date label{
+                color: white;
+            }
+            .result{
+                color: white;
+                margin-top: 10px;
+            }
+            .rezultat{
+                padding-left: 20px;
+                color: white;
+            }
+        </style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator radical</title>
+        <meta name="description" content="Calculam un radical de ordin n">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="radical.css">
+    </head>
+    <body>
+    <div class="parent">      
+        <div class="container-sm cutie">
+            <div class="title">
+                <h2>Calculator radical ordin n</h2>
+            </div>
+            <div class="date">
+                <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Numar n</label>
+                      <input type="number" step="0.0000001" class="form-control" id="formRadical1" placeholder="ex: 16">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Ordin radical</label>
+                      <input type="number" step="0.0000001" class="form-control" id="formRadical2" placeholder="ex: 4">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput3">Marja eroare</label>
+                        <input type="number" step="0.0000001" class="form-control" id="formRadical3" placeholder="ex: 0.001">
+                      </div>
+                  </form>
+                  <div class="result">
+                    <input class="button btn btn-primary" type="submit" value="Calculeaza!" id="butonRadical" onclick="x()">
+                    <span class="rezultat">
+                        <span class="text">Rezultat: </span>
+                        <span id="rezultat"></span>
+                    </span>
+                </div>      
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
